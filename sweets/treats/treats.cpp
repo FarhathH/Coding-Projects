@@ -10,8 +10,8 @@ class Treats //main class and containing the bare minimum essentials.
 {
 
     protected:
-        string ChocoList[10] = {"Mars Bars", "KitKat", "Bounty", "Snickers", "Ferrero Roche"};
-        double prices[10] = {};
+        string chocoList[5] = {"Mars Bars", "KitKat", "Bounty", "Snickers", "Ferrero Roche"};
+        double chocoPrices[10] = {};
     public:
         Treats()
         {
