@@ -30,6 +30,6 @@ int main()
     
     string sweets[5] = {"Mars Bars", "KitKat", "Bounty", "Snickers", "Ferrero Roche"};
     
-
+    cout << sweets[0] << endl;
     return 0;
 }
