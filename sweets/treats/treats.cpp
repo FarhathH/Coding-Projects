@@ -9,13 +9,15 @@ using namespace std;
 class Treats //main class and containing the bare minimum essentials.
 {    
     public:
-        string chocoList[5] = {"Mars Bars", "KitKat", "Bounty", "Snickers", "Ferrero Roche"};
-        double chocoPrices[10] = {};
+        
         Treats()
         {
             cout << "Sweet treats" << endl;
             cout << "Pick any treat you want by pressing the corresponding" << endl;
         }
+
+        void viewTreats();
+        void selectTreats();
 };
 
 class Gummies : Treats
@@ -23,7 +25,7 @@ class Gummies : Treats
 
     void selectTreat()
     {
-
+        
     }
     
 };
@@ -31,15 +33,31 @@ class Gummies : Treats
 class Chocolate : Treats
 {
     public:
-        string choco[5];
+        string chocoList[5] = {"Mars Bars", "KitKat", "Bounty", "Snickers", "Ferrero Roche"};
+        double chocoPrices[5] = {0.10, 0.57, 0.45, 0.39, 0.21};
+        int treat;
+
+        void viewTreats()
+        {
+            cout << chocoList << endl;
+        }
+
+        void selectTreat()
+        {
+
+        }
+        
 };
 
 int main()
 {
     
-   Treats y;
+   cout << "Hello World" << endl;
 
-   cout << y.chocoList << endl;
+   Chocolate c1;
+   Gummies c12;
+    
+   
 
    
     
