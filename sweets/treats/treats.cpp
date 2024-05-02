@@ -7,12 +7,10 @@ using namespace std;
     file has gone either corrupted or faulty.
 */
 class Treats //main class and containing the bare minimum essentials.
-{
-
-    protected:
+{    
+    public:
         string chocoList[5] = {"Mars Bars", "KitKat", "Bounty", "Snickers", "Ferrero Roche"};
         double chocoPrices[10] = {};
-    public:
         Treats()
         {
             cout << "Sweet treats" << endl;
@@ -22,14 +20,29 @@ class Treats //main class and containing the bare minimum essentials.
 
 class Gummies : Treats
 {
+
+    void selectTreat()
+    {
+
+    }
     
+};
+
+class Chocolate : Treats
+{
+    public:
+        string choco[5];
 };
 
 int main()
 {
     
-    string sweets[5] = {"Mars Bars", "KitKat", "Bounty", "Snickers", "Ferrero Roche"};
+   Treats y;
+
+   cout << y.chocoList << endl;
+
+   
     
-    cout << sweets[0] << endl;
+    
     return 0;
 }
