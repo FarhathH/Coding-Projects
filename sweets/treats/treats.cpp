@@ -12,8 +12,7 @@ class Treats //main class and containing the bare minimum essentials.
         
         Treats()
         {
-            cout << "Sweet treats" << endl;
-            cout << "Pick any treat you want by pressing the corresponding" << endl;
+            cout << "******************************************" << endl;
         }
 
         void viewTreats();
@@ -39,6 +38,7 @@ class Chocolate : Treats
 
         void viewTreats()
         {
+            cout << "Pick any treat you want by pressing the corresponding" << endl;
             cout << chocoList << endl;
         }
 
@@ -56,8 +56,8 @@ int main()
 
    Chocolate c1;
    Gummies c12;
-    
-   
+
+   c1.viewTreats();
 
    
     
