@@ -9,11 +9,20 @@ body
     padding:5%;
 }
 
+.space
+{
+    padding: 5%;
+    display:flex;
+    flex: 0.06;
+    background-color: bisque;
+}
+
 p
 {
     background-color: azure;
-    width:10%;
     font-family:'Courier New', Courier, monospace;
+    margin:5%;
+    
 }
 
 .nav-frame
@@ -24,7 +33,9 @@ p
     width: 90%;
     background-color: aquamarine;
     padding:30px;
+    
 }
+
 .frame
 {
     display: flex;
@@ -34,6 +45,7 @@ p
     background-color: blueviolet;
     padding:30px;
 }
+
 .frame2
 {
     height: 80%;
@@ -42,4 +54,5 @@ p
     padding:30px;
     display: flex;
     flex: 0.9;
+    flex-direction: row;
 }
