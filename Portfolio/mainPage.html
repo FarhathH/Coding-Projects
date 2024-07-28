@@ -12,17 +12,17 @@
  
             
     <body>
-        <nav class = "nav-frame">
-            <button>Home</button>
-            <button>About</button>
-            <button>Digital Art</button>
-            <button>Animation</button>
+        <nav class = "nav-frame"> <!-- Just a nav bar to navigate to different pages-->
+            <button id = "home" onmouseover="homeHover()" onmouseleave="homeExit()" onclick = "home()">Home</button>
+            <button id = "about" onmouseover="aboutHover()" onmouseleave="aboutExit()" onclick = "about()">About</button>
+            <button id = "digitalArt" onmouseover = "digitalArtHover()" onmouseleave="digitalArtExit()" onclick = "digitalArt()">Digital Art</button>
+            <button id = "animation" onmouseover="animationHover()" onmouseleave="animationExit()" onclick = "animation()">Animation</button>
         </nav>
 
-        <div class = "top-text">
+        <div class = "top-content">
             <div class = "frame2">
                 <div class = "space">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    This is a preview.
                 </div>
                 <div class = "space">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -31,7 +31,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </div>
             </div>
-            <div class = "bottom-text">
+            <div class = "frame">
                 <div class = "space">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </div>
@@ -44,7 +44,9 @@
             </div>
         </div>
 
-        <div class = "bottom-text">
+        <div class = "space"></div>
+
+        <div class = "bottom-content">
             <div class = "space">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
@@ -55,5 +57,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
         </div>
+
+        <script src = "script.js"></script>
     </body>
 </html>

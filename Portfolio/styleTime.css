@@ -1,6 +1,6 @@
 body
 {
-    background-color: beige;
+    background-color: blue;
     
     height:100vh;
     width: 90vw;
@@ -11,10 +11,11 @@ body
 
 .space
 {
-    padding: 5%;
+    padding: 7.5%;
     display:flex;
     flex: 0.06;
     background-color: bisque;
+    
 }
 
 button
@@ -24,14 +25,21 @@ button
     font-family:'Courier New', Courier, monospace;
     margin:5%;
     border-radius: 1px dashed red;
-    align-items: center;
-    background-color: aqua;
-    
+    padding: 2.5%;
+    background-color: beige;
+    scale: 100%;
+    transition: 0.5s;
+    border: none;
 }
 
 button:hover
 {
+    transition: 0.5s;
     cursor: pointer;
+    scale: 150%;
+    color: grey;
+    border: 2px double grey;
+    font-style:inherit;
 }
 
 .nav-frame
@@ -39,8 +47,9 @@ button:hover
     display: flex;
     flex-direction: row;
     flex:0.12;
-    background-color: aquamarine;
+    background-color: beige;
     padding:30px;
+    align-items: center;
     margin-bottom: 10px;
     
 }
@@ -49,33 +58,36 @@ button:hover
 {
     display: flex;
     flex-direction: row;
-    height: 10%;
-    width: 90%;
-    background-color: blueviolet;
-    padding:30px;
+    flex:0.25;
+    padding: 5%;
+    background-color: beige;
+    
 }
 
 .frame2
 {
    
-    background-color: blue;
-    padding:30px;
+    background-color: beige;
     display: flex;
-    flex: 0.9;
+    flex: 0.5;
+    padding: 5%;
     flex-direction: row;
 }
-.bottom-text
+.bottom-content
 {
    
-    background-color: blue;
+    background-color: beige;
     padding: 30px;
     display: flex;
     flex: 0.9;
     flex-direction: column;
 }
 
-.top-text
+.top-content
 {
+    background-color: beige;
+    flex:0.1;
     display:flex;
     flex-direction: row;
 }
+
