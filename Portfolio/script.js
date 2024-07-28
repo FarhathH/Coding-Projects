@@ -55,5 +55,7 @@ function animationExit(){
     document.getElementById("animation").style.color = "black";
 }
 
-
+function paraHover(){
+    
+}
 
