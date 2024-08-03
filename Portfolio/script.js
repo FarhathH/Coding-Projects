@@ -1,10 +1,27 @@
 function home(){
     document.body.style.backgroundColor = "blue";
+    document.getElementsByClassName("space")[0].style.backgroundColor = "blue";
+    document.getElementsByClassName("space")[0].style.color = "lightblue";
+    document.getElementsByClassName("space")[1].style.backgroundColor = "blue";
+    document.getElementsByClassName("space")[1].style.color = "lightblue";
+    document.getElementsByClassName("space")[2].style.backgroundColor = "blue";
+    document.getElementsByClassName("space")[2].style.color = "lightblue";
+    document.getElementsByClassName("space")[3].style.backgroundColor = "blue";
+    document.getElementsByClassName("space")[3].style.color = "lightblue";
+    document.getElementsByClassName("space")[4].style.backgroundColor = "blue";
+    document.getElementsByClassName("space")[4].style.color = "lightblue";
+    
+
+    document.getElementsByClassName("space")[0].innerHTML = "Home sweet home.";
+    document.getElementsByClassName("space")[1].innerHTML = 
+    document.getElementsByClassName("space")[0].style.flex = "0.01";
+    document.getElementsByClassName("space")[0].style.transition = "2s";
 }
 
 function homeHover(){
     document.getElementById("home").style.backgroundColor = "blue";
     document.getElementById("home").style.color = "lightblue";
+  
 }
 
 function homeExit(){
@@ -14,6 +31,19 @@ function homeExit(){
 
 function about(){
     document.body.style.backgroundColor = "#6A89A7";
+    document.getElementsByClassName("space")[0].style.backgroundColor = "#6A89A7";
+    document.getElementsByClassName("space")[0].style.color = "#B7C9E2";
+    document.getElementsByClassName("space")[1].style.backgroundColor = "#6A89A7";
+    document.getElementsByClassName("space")[1].style.color = "#B7C9E2";
+    document.getElementsByClassName("space")[2].style.backgroundColor = "#6A89A7";
+    document.getElementsByClassName("space")[2].style.color = "#B7C9E2";
+    document.getElementsByClassName("space")[3].style.backgroundColor = "#6A89A7";
+    document.getElementsByClassName("space")[3].style.color = "#B7C9E2";
+    document.getElementsByClassName("space")[4].style.backgroundColor = "#6A89A7";
+    document.getElementsByClassName("space")[4].style.color = "#B7C9E2";
+
+    document.getElementsByClassName("space")[0].innerHTML = "This is a webpage to display my work";
+    document.getElementsByClassName("space")[0].style.transition = "2s";
 }
 
 function aboutHover(){
@@ -28,6 +58,19 @@ function aboutExit(){
 
 function digitalArt(){
     document.body.style.backgroundColor = "#FF69B4";
+    document.getElementsByClassName("space")[0].style.backgroundColor = "#FF69B4";
+    document.getElementsByClassName("space")[0].style.color = "#FFB3DE";
+    document.getElementsByClassName("space")[1].style.backgroundColor = "#FF69B4";
+    document.getElementsByClassName("space")[1].style.color = "#FFB3DE";
+    document.getElementsByClassName("space")[2].style.backgroundColor = "#FF69B4";
+    document.getElementsByClassName("space")[2].style.color = "#FFB3DE";
+    document.getElementsByClassName("space")[3].style.backgroundColor = "#FF69B4";
+    document.getElementsByClassName("space")[3].style.color = "#FFB3DE";
+    document.getElementsByClassName("space")[4].style.backgroundColor = "#FF69B4";
+    document.getElementsByClassName("space")[4].style.color = "#FFB3DE";
+
+    document.getElementsByClassName("space")[0].innerHTML = "Just my digital art";
+    document.getElementsByClassName("space")[0].style.transition = "2s";
 }
 
 function digitalArtHover(){
@@ -42,7 +85,19 @@ function digitalArtExit(){
 
 function animation(){
     document.body.style.backgroundColor = "#0D050D";
-    
+    document.getElementsByClassName("space")[0].style.backgroundColor = "#0D050D";
+    document.getElementsByClassName("space")[0].style.color = "#F2EBF3";
+    document.getElementsByClassName("space")[1].style.backgroundColor = "#0D050D";
+    document.getElementsByClassName("space")[1].style.color = "#F2EBF3";
+    document.getElementsByClassName("space")[2].style.backgroundColor = "#0D050D";
+    document.getElementsByClassName("space")[2].style.color = "#F2EBF3";
+    document.getElementsByClassName("space")[3].style.backgroundColor = "#0D050D";
+    document.getElementsByClassName("space")[3].style.color = "#F2EBF3";
+    document.getElementsByClassName("space")[4].style.backgroundColor = "#0D050D";
+    document.getElementsByClassName("space")[4].style.color = "#F2EBF3";
+
+    document.getElementsByClassName("space")[0].innerHTML = "Time to animate";
+    document.getElementsByClassName("space")[0].style.transition = "2s";
 }
 
 function animationHover(){
@@ -56,6 +111,7 @@ function animationExit(){
 }
 
 function paraHover(){
-    
+    document.getElementById("hurry").style.transform.rotate = 90;
 }
+
 

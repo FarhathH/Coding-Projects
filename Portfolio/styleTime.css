@@ -1,3 +1,5 @@
+
+
 body
 {
     background-color: blue;
@@ -14,7 +16,9 @@ body
     padding: 7.5%;
     display:flex;
     flex: 0.06;
-    background-color: bisque;
+    background-color: blue;
+    color:lightblue;
+    
     
 }
 
@@ -48,7 +52,7 @@ button:hover
     flex-direction: row;
     flex:0.12;
     background-color: beige;
-    padding:30px;
+    padding:40px;
     align-items: center;
     margin-bottom: 10px;
     
@@ -57,7 +61,7 @@ button:hover
 .frame
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex:0.25;
     padding: 5%;
     background-color: beige;
@@ -91,7 +95,7 @@ button:hover
     flex-direction: row;
 }
 
-p
-{
-    
-}
+
+
+
+
