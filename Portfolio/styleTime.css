@@ -36,6 +36,23 @@ button
     border: none;
 }
 
+.calculate
+{
+    color:aquamarine;
+    background-color: azure;
+}
+
+.calculator
+{
+    width:100vw;
+    height: 50vh;
+}
+.cal-row
+{
+    display:flex;
+    flex-direction: row;
+}
+
 button:hover
 {
     transition: 0.5s;
