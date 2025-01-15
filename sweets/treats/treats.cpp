@@ -27,7 +27,7 @@ class Sweets
             {
                 for(int j = 0; j < 5; j++)
                 {
-                    cout << snacks[i][j];
+                    cout << snacks[i][j] << endl;
                 }
             }
         }
@@ -40,15 +40,21 @@ class Sweets
 
         void selectChoice()
         {
+            int choice;
             cout << "Select your choice" << endl;
-            //
+            cin >> choice;
+        }
+
+        void Transaction(int choice)
+        {
+
         }
 };
 
 
 int main()
 {
-
+    //This is where I call the attributes and methods for executing the code.
     Sweets p;
     p.viewList();
     p.viewCredits();
