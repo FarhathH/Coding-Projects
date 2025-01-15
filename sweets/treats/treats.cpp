@@ -27,7 +27,7 @@ class Sweets
             {
                 for(int j = 0; j < 5; j++)
                 {
-                    cout << snacks[i][j] << endl;
+                    cout << snacks[i][j];
                 }
             }
         }
@@ -36,6 +36,12 @@ class Sweets
         {
             cout << "************" << endl;
             cout << "Credits: " << credits << endl;
+        }
+
+        void selectChoice()
+        {
+            cout << "Select your choice" << endl;
+            //
         }
 };
 
@@ -46,6 +52,8 @@ int main()
     Sweets p;
     p.viewList();
     p.viewCredits();
+    p.selectChoice();
+    
 
     
     return 0;
