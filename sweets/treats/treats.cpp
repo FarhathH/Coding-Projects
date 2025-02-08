@@ -47,7 +47,9 @@ class Sweets
 
         void Transaction(int choice)
         {
-
+            double answer = credits - prices[choice];
+            cout << answer << endl;
+            
         }
 };
 
@@ -59,8 +61,8 @@ int main()
     p.viewList();
     p.viewCredits();
     p.selectChoice();
-    
-
+    p.Transaction(0.28);
+    //p.viewCredits();
     
     return 0;
 }
