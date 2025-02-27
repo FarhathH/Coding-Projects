@@ -12,7 +12,9 @@ class Sweets
             };
 
         double prices[5] = {0.50, 0.65, 0.70, 0.23, 0.19};
-        double credits = 4.67;
+        double credits = 4.67; //default money for the user
+        double currentCredits;
+        int choice;
 
         Sweets()
         {
@@ -30,6 +32,8 @@ class Sweets
                     cout << snacks[i][j] << endl;
                 }
             }
+
+            cout << "Select your choice" << endl;
         }
 
         void viewCredits()
@@ -38,31 +42,34 @@ class Sweets
             cout << "Credits: " << credits << endl;
         }
 
-        void selectChoice()
+
+        void Transaction(choice)
         {
-            int choice;
-            cout << "Select your choice" << endl;
-            cin >> choice;
+            
+            currentCredits = credits - prices[choice];
         }
 
-        void Transaction(int choice)
+        void remainingCredits()
         {
-            double answer = credits - prices[choice];
-            cout << answer << endl;
-            
+
+            cout << "************" << endl;
+            cout << "Credits: " << currentCredits << endl;
         }
 };
 
 
 int main()
 {
+    int choice;
     //This is where I call the attributes and methods for executing the code.
-    Sweets p;
+    Sweets p; //for food
+    Sweets d; //for money
+
+    d.viewCredits();
     p.viewList();
-    p.viewCredits();
-    p.selectChoice();
-    p.Transaction(0.28);
-    //p.viewCredits();
+    cin >> choice;
+    d.Transaction(choice);
+    d.viewCredits();
     
     return 0;
 }
