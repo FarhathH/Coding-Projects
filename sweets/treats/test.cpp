@@ -6,7 +6,7 @@ using namespace std;
 class Queue { 
 	int size; 
 	int* queue; 
-    int num;
+    
 	
 	public:
 	Queue() {
@@ -38,8 +38,9 @@ class Queue {
 	}
 	//your code goes here
 	void add(int num){
-        queue[size++];
         queue[size] = num;
+		size++;
+        
 	}
 }; 
 
