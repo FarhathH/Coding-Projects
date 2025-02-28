@@ -43,24 +43,9 @@ class Sweets
         }
 
 
-        void Transaction(choice)
+        int Transaction(int c)
         {
-            switch (choice)
-            {
-                case 0:
-                /* code */
-                    cout << "You selected: " << snacks[0][0] << endl;
-                    break;
-                case 1:
-                    cout << "You selected: " << snacks[0][1] << endl;
-                    break;
-                case 2:
-                    cout << "You selected: " << snacks[0][2] << endl;
-            
-            default:
-                break;
-            }
-            currentCredits = credits - prices[choice];
+           currentCredits = credits - prices[c];
         }
 
         void remainingCredits()
@@ -74,15 +59,15 @@ class Sweets
 
 int main()
 {
-    int choice;
+    int c;
     //This is where I call the attributes and methods for executing the code.
     Sweets p; //for food
     Sweets d; //for money
 
     d.viewCredits();
     p.viewList();
-    cin >> choice;
-    d.Transaction(choice);
+    cin >> c;
+    d.Transaction(c);
     d.viewCredits();
     
     return 0;
