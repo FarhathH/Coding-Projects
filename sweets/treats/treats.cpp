@@ -45,7 +45,21 @@ class Sweets
 
         void Transaction(choice)
         {
+            switch (choice)
+            {
+                case 0:
+                /* code */
+                    cout << "You selected: " << snacks[0][0] << endl;
+                    break;
+                case 1:
+                    cout << "You selected: " << snacks[0][1] << endl;
+                    break;
+                case 2:
+                    cout << "You selected: " << snacks[0][2] << endl;
             
+            default:
+                break;
+            }
             currentCredits = credits - prices[choice];
         }
 

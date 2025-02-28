@@ -1,25 +1,58 @@
 //testing out anything I want to add onto my main file.
-using namespace std;
-#include <string>
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main()
-{
-    cout << "Hello world" << endl;
+class Queue { 
+	int size; 
+	int* queue; 
+    int num;
+	
+	public:
+	Queue() {
+		size = 0;
+		queue = new int[100];
+	}
+	void remove() { 
+		if (size == 0) { 
+			cout << "Queue is empty"<<endl; 
+			return; 
+		} 
+		else { 
+			for (int i = 0; i < size - 1; i++) { 
+				queue[i] = queue[i + 1]; 
+			} 
+			size--; 
+		} 
+	} 
+	
+	void print() { 
+		if (size == 0) { 
+			cout << "Queue is empty"<< endl; 
+			return; 
+		} 
+		for (int i = 0; i < size; i++) { 
+			cout<<queue[i]<<" <- ";
+		} 
+		cout <<endl;
+	}
+	//your code goes here
+	void add(int num){
+        queue[size++];
+        queue[size] = num;
+	}
+}; 
 
-    string Choco[2][3] = 
-    { 
-    {"Mars", "Milkyway", "Lion"},
-    {"0.60", "0.45", "1.83"}
-    };
+int main() { 
+	Queue q; 
+	q.add(42); q.add(2); q.add(8); q.add(1); 
+	q.print();
+	q.remove(); 
+	q.add(128); 
+	q.print(); 
+	q.remove(); 
+	q.remove(); 
+	q.print(); 
 
-    for(int i = 0; i < 2; i++)
-    {
-        for(int j = 0; j < 3; j++)
-        {
-            cout << Choco[i][j] << endl;
-        }
-    }
-    
-    return 0;
-}
+	return 0; 
+} 
