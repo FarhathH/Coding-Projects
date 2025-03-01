@@ -14,7 +14,7 @@ class Sweets
         double prices[5] = {0.50, 0.65, 0.70, 0.23, 0.19};
         double credits = 4.67; //default money for the user
         double currentCredits;
-        int choice;
+        
 
         Sweets()
         {
@@ -43,9 +43,10 @@ class Sweets
         }
 
 
-        int Transaction(int c)
+        int Transaction(int choice)
         {
-           currentCredits = credits - prices[c];
+            cout << "You have selected" << endl; 
+            currentCredits = credits - prices[choice];
         }
 
         void remainingCredits()
