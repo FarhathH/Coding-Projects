@@ -47,6 +47,7 @@ class Sweets
         {
             cout << "You have selected" << endl; 
             currentCredits = credits - prices[choice];
+            return currentCredits;
         }
 
         void remainingCredits()
