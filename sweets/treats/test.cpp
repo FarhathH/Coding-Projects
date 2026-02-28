@@ -1,23 +1,26 @@
-//testing out anything I want to add onto my main file.
 #include <iostream>
-#include <string>
 using namespace std;
 
-int main()
-{
-	int n;
-    cin >> n; //size of the array
+int main() {
+    int n;
     int size = n;
+    int no1, no2, no3, no4;
+    cin >> n; //size of the array
     //your code goes here
-    int *nums = new int[size];
+    cin >> no1, no2, no3, no4;
+    int * nums = new int[size];
+    no1 = nums[0];
+    no2 = nums[1];
+    no3 = nums[2];
+    no4 = nums[3];
 
     
-    int max;
-    for(int i=0; i<size; i++) {
-        if(nums[i]<max)
+
+    int max = nums[0];
+    for(int i=0; i<n; i++) {
+        if(nums[i]>max)
             max = nums[i];
     }
-    cout << max << endl;
-    
+    cout << max;
     return 0;
 }
